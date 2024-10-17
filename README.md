@@ -2,7 +2,6 @@
 
 Devy is a shell-based AI assistant designed to alleviate the worry of remembering commands, to be proactive support with debugging, and to provide guidance on best practices for clean, efficient, and maintainable code.
 
-![Screenshot](https://raw.githubusercontent.com/justiceo/console-tasks/main/src/examples/demo.gif)
 ![Screenshot](dist/assets/demo.gif)
 
 ## Features
