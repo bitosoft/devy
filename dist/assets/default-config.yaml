@@ -1,0 +1,153 @@
+# Devy Configuration File
+
+# Devy License Key
+devyLicenseKey: YOUR_DEVY_LICENSE_KEY
+
+# Debug Mode
+# Set to true to enable verbose logging for troubleshooting
+# Default: false
+debugMode: false
+
+# Command Execution Strategy
+# Determines how Devy handles command execution
+# Options:
+#   - automatic: Devy executes commands without asking for confirmation
+#   - askBefore: Devy asks for confirmation before executing each command
+#   - off: Devy does not execute any commands, only suggests them
+# Default: automatic
+commandExecutionStrategy: automatic
+
+# Model Type
+# Specifies which AI model to use for generating responses
+# Options: claude, gemini, chatgpt
+# Default: chatgpt
+modelType: chatgpt
+
+# Model Configurations
+models:
+  claude:
+    # Claude API Key
+    # To obtain: Sign up at https://www.anthropic.com and follow their API access instructions
+    apiKey: YOUR_CLAUDE_API_KEY
+    # Model configuration
+    modelName: "claude-3-5-sonnet-20240620"
+    temperature: 0.1
+    maxTokens: 1000
+
+  gemini:
+    # Gemini API Key
+    # To obtain: Visit https://makersuite.google.com/app/apikey and create a key
+    apiKey: YOUR_GEMINI_API_KEY
+    # Model configuration
+    modelName: "models/gemini-1.5-pro"
+    temperature: 0.2
+    maxTokens: 1000
+    topP: 0.2
+    topK: 20
+
+  chatgpt:
+    # ChatGPT API Key
+    # To obtain: Go to https://platform.openai.com/account/api-keys and create a new secret key
+    apiKey: YOUR_CHATGPT_API_KEY
+    # Model configuration
+    modelName: "gpt-4o-mini"
+    temperature: 0.1
+    maxTokens: 1000
+
+# Shell Configuration
+shells:
+  # Bash configuration
+  bash:
+    # Path to .bashrc file
+    # Default: ~/.bashrc
+    rcFile: ~/.bashrc
+
+    # Custom aliases for Bash
+    aliases:
+      # Example: alias shortcut='long command'
+      # ll: 'ls -la'
+
+  # Zsh configuration
+  zsh:
+    # Path to .zshrc file
+    # Default: ~/.zshrc
+    rcFile: ~/.zshrc
+
+    # Custom aliases for Zsh
+    aliases:
+      # Example: alias shortcut='long command'
+      # gst: 'git status'
+
+  # Fish configuration
+  fish:
+    # Path to config.fish file
+    # Default: ~/.config/fish/config.fish
+    rcFile: ~/.config/fish/config.fish
+
+    # Custom aliases for Fish
+    aliases:
+      # Example: alias shortcut='long command'
+      # dc: 'docker-compose'
+
+# History Logging Configuration
+historyLogging:
+  # Enable or disable history logging
+  # Default: true
+  enabled: true
+
+  # Maximum number of history entries to keep
+  # Default: 10000
+  maxEntries: 10000
+
+  # Include timestamps in history entries
+  # Default: true
+  includeTimestamps: true
+
+# File Operations
+fileOperations:
+  # Maximum file size (in bytes) that Devy can read or modify
+  # Default: 1048576 (1MB)
+  maxFileSize: 1048576
+
+  # List of file extensions that Devy is allowed to modify
+  # Default: ['.txt', '.md', '.js', '.py', '.html', '.css', '.json']
+  allowedExtensions:
+    - .txt
+    - .md
+    - .js
+    - .py
+    - .html
+    - .css
+    - .json
+
+# Security Settings
+security:
+  # Require confirmation for potentially dangerous operations
+  # Default: true
+  confirmDangerousOperations: true
+
+  # List of directories that Devy is not allowed to access or modify
+  restrictedDirectories:
+    - /etc
+    - /var
+    - /root
+
+# User Preferences
+userPreferences:
+  # Preferred programming language for code examples
+  # Default: JavaScript
+  preferredLanguage: JavaScript
+
+  # Enable or disable emoji use in Devy's responses
+  # Default: true
+  useEmoji: true
+
+# Advanced Settings
+advanced:
+  # Custom system prompt to be used with the AI model
+  # Leave empty to use the default prompt
+  customSystemPrompt: ""
+
+  # Timeout for API calls (in milliseconds)
+  # Default: 30000 (30 seconds)
+  apiTimeout: 30000
