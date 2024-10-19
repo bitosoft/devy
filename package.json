@@ -1,6 +1,6 @@
 {
   "name": "@bitosoft/devy",
-  "version": "0.0.33",
+  "version": "0.0.34",
   "description": "A shell-based AI assistant",
   "main": "dist/devy.js",
   "keywords": [

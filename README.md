@@ -2,7 +2,7 @@
 
 Devy is a shell-based AI assistant designed to alleviate the worry of remembering commands, to be proactive support with debugging, and to provide guidance on best practices for clean, efficient, and maintainable code.
 
-![Screenshot](dist/assets/demo.gif)
+![Screenshot](https://raw.githubusercontent.com/bitosoft/devy/main/dist/assets/demo.gif)
 
 ## Features
 

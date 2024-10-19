@@ -22,12 +22,15 @@ Output src/assets/demo.gif
 #   Set WindowBar <string>          Set window bar type. (one of: Rings, RingsRight, Colorful, ColorfulRight)
 #   Set WindowBarSize <number>      Set window bar size, in pixels. Default is 40.
 #   Set TypingSpeed <time>          Set the typing speed of the terminal. Default is 50ms.
-Set FontSize 10
-Set Height 300
-Set Width 500
+Set FontSize 14
+Set Height 600
+Set Width 850
 Set Padding 10
 Set BorderRadius 10
 Set WindowBar Colorful
+Set LoopOffset 50000                # Skip the "source" command by starting at the 5th frame.
+Set PlaybackSpeed 1.5           # Make the playback 1.5x faster.
+Set TypingSpeed 0.1s
 
 Type "source ~/.zshrc"
 Enter
@@ -38,12 +41,12 @@ Sleep 2s
 Type "ls"
 Enter
 Sleep 1s
-Type "ls only json files"
+Type "ls but with file sizes"
 Sleep 1s
-Type ", include sizes"
 Enter
 Sleep 2s
 Type "show my last 3 git commits"
+Sleep 1s
 Enter
 Sleep 2s
 Sleep 3s
